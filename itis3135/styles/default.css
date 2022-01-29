@@ -24,3 +24,35 @@ a
     text-decoration: none;
     color: green;
 }
+footer
+{
+    color: blue;
+    text-align: center;
+    font-size: 16px;
+}
+body
+{
+    color: blue;
+    font-size: 20px;
+}
+img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+h3
+{
+    text-align: center;
+}
+td, th, table
+{
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}
+.total
+{
+    text-align: right;
+}
