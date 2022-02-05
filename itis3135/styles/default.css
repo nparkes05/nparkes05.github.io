@@ -1,21 +1,22 @@
 h1 
 {
-    color: blue;
+    color: rgb(30, 30, 202);;
     text-align: center;
 }
 h2 
 {
-    color: blue;
+    color: rgb(30, 30, 202);;
     text-align: center;
 }
 body 
 {
     background-color: gray;
-    
+    color: rgb(30, 30, 202);
+    font-size: 20px;
 }
 nav 
 {
-    color: blue;
+    color: rgb(30, 30, 202);;
     text-align: center;
     font-size: 24px;
 }
@@ -26,14 +27,13 @@ a
 }
 footer
 {
-    color: blue;
+    color: rgb(30, 30, 202);;
     text-align: center;
     font-size: 16px;
 }
-body
+p
 {
-    color: blue;
-    font-size: 20px;
+    margin-left: 20px;
 }
 img
 {
@@ -55,4 +55,8 @@ td, th, table
 .total
 {
     text-align: right;
+}
+form
+{
+    margin-left: 600px;
 }
