@@ -1,6 +1,10 @@
 window.onload = function(){
+    polygonFunction();
+}
+
+function polygonFunction(){
     //Gets user input
-    var userInput = prompt("Enter a number of sides");
+    var userInput = prompt("Please enter a number between 3 and 7");
     //calls validation to validate number of sides
     var valid = validation(userInput);
     if(valid){ //if valid shape
@@ -8,7 +12,7 @@ window.onload = function(){
         alert("Number of sides: " + userInput + "\nYour shape: " + shape);
     }
     else //if invalid shape
-        alert("Invalid shape");
+        alert("Sorry, an error has occurred.");
 }
 
 //gets user input and returns a string of the shape

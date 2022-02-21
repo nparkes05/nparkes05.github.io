@@ -10,13 +10,13 @@ h2
 }
 body 
 {
-    background-color: gray;
-    color: rgb(30, 30, 202);
+    background-color: rgb(170, 168, 168);
+    color: #1C1CBA;
     font-size: 20px;
 }
 nav 
 {
-    color: rgb(30, 30, 202);;
+    color: #1C1CBA;
     text-align: center;
     font-size: 24px;
 }
@@ -27,7 +27,7 @@ a
 }
 footer
 {
-    color: rgb(30, 30, 202);;
+    color: #1C1CBA;
     text-align: center;
     font-size: 16px;
 }
@@ -58,4 +58,9 @@ td, th, table
 form
 {
     margin-left: 600px;
+}
+header 
+{
+    background-color: #FFFDB8;
+    margin: 0 15% 0 15%;
 }
