@@ -35,7 +35,7 @@ p
 {
     margin-left: 20px;
 }
-img
+.picture
 {
     display: block;
     margin-left: auto;
@@ -57,10 +57,21 @@ td, th, table
 }
 form
 {
-    margin-left: 600px;
+    margin-left: 30%;
 }
 header 
 {
     background-color: #FFFDB8;
     margin: 0 15% 0 15%;
+}
+.center
+{
+    margin-left: 50%;
+}
+.button
+{
+    background-color: #1C1CBA;
+	border: none;
+	color: white;
+	padding: 12px 25px 12px 25px;
 }

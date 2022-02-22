@@ -36,30 +36,31 @@
                 <input type="text" id="name" for="name" required><br>
                 <label for="feeling">How do you feel:</label><br>
                 <input type="text" id="feeling" for="feeling" required><br>
-                <input type="button" onclick="sumbitFunction()" value="Submit">
+                <input type="button" onclick="sumbitFunction()" value="Submit" class="button">
             </form>
-            <p id="output" style="text-align: center;"></p>
+            <p id="output" style="text-align: center;"></p><br>
 
             <p style="text-align: center;">Why did the chicken cross the road?</p>
-            <form><input type="button" onclick="chickenFunction()" value="Why?"></form>
+            <input type="button" onclick="chickenFunction()" value="Why?" class="center button">
             <p id="chicken" style="text-align: center;"></p><br>
 
+            <br>
             <form id="tipForm">
                 <label for="tip">Enter in your meal:</label>
                 <input type="text" id="tip" for="tip" required>
-                <input type="button" onclick="tipFunction()" value="Submit">
+                <input type="button" onclick="tipFunction()" value="Submit" class="button">
             </form>
             <p id="tipOutput" style="text-align: center;"></p><br>
 
-            <form><input type="button" onclick="averageFunction()" value="Average"></form>
+            <input type="button" onclick="averageFunction()" value="Average" class="center button"><br>
 
-            <form><input type="button" onclick="sumFunction()" value="Sum"></form>
+            <br><input type="button" onclick="sumFunction()" value="Sum" class="center button">
             <p id="sumOutput"></p><br>
 
             <form>
                 <label for="guess">Guess a number between 1-9:</label>
                 <input type="text" id="guess" for="guess" required>
-                <input type="button" onclick="randFunction()" value="Submit"><br>
+                <input type="button" onclick="randFunction()" value="Submit" class="button"><br>
             </form>
             <p id="guessOutput" style="text-align: center;"></p>
         </main>
@@ -82,7 +83,7 @@
             </nav>
             <br>
             Designed by <a href="ParkesDevelopment.co/">Parkes Development co.</a>
-            <p>
+            <div class="evaluators">
                 <a href="https://jigsaw.w3.org/css-validator/check/referer">
                     <img style="border:0;width:88px;height:31px"
                         src="https://jigsaw.w3.org/css-validator/images/vcss"
@@ -93,7 +94,7 @@
                         src="images/button_validation_html5.png"
                         alt="Valid HTML!" />
                 </a>
-            </p>
+            </div>
         </footer>
     </body>
 </html>
