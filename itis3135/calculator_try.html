@@ -2,8 +2,9 @@
 <html lang ="en">
     <head>
         <meta charset="utf-8">
+        <script src="scripts/calculator_try.js"></script>
         <link rel="stylesheet" href="styles/default.css">
-        <title>Noah Parkes | ITIS3135 | Nickel Parrot| Contract</title>
+        <title>Noah Parkes | ITIS3135 | Nickel Parrot| Calculator</title>
     </head>
     <body>
         <header>
@@ -24,25 +25,29 @@
                 <a href="firstscripts.html">First Scripts</a>
                 |
                 <a href="Exercise/Parkes-Activity6.html">Name the Polygon</a>
+                |
+                <a href="calculator_try.html">Activity 7 Calculator</a>
             </nav>
         </header>
+    
         <main>
-            <h2>Contract</h2>
-            <p>
-                I, Noah B. Parkes agree to abide by the terms of the course contract in my Spring 2022, ITIS3135, Web App Development  with my instructor, Professor D.I. von Briesen.
-            </p>
-            <p>
-                I understand that all work that I do on publicly available online tools will be available to the world, and will not put information there that is inappropriate for schoolwork, or that I wish to keep private.
-            </p>
-            <p>
-                I also understand that it is my work that counts for attendance, not logins or showing up for class. As such, failure to turn in assignments may show as absences.
-            </p>
-            <p>
-                I also understand that given the structure and content of this class it’s possible to find many examples online or even view my classmates’ code directly. I swear that I will only use these resources to learn, and will not cut and paste code except where i have properly given credit (i.e. external libraries) and never from my classmates.
-            </p>
-            <p>
-                Signed: Noah B. Parkes, 25/01/20221
-            </p>
+            <h2>Home Page</h2>
+            <button type="button" id="btn0" onclick="button0()">0</button>
+            <button type="button" id="btn1" onclick="button1()">1</button>
+            <button type="button" id="btn2" onclick="button2()">2</button>
+            <button type="button" id="btn3" onclick="button3()">3</button>
+            <button type="button" id="btn4" onclick="button4()">4</button>
+            <button type="button" id="btn5" onclick="button5()">5</button>
+            <button type="button" id="btn6" onclick="button6()">6</button>
+            <button type="button" id="btn7" onclick="button7()">7</button>
+            <button type="button" id="btn8" onclick="button8()">8</button>
+            <button type="button" id="btn9" onclick="button9()">9</button>
+            <button type="button" id="btnPlus" onclick="plusFunction()">+</button>
+            <button type="button" id="btnSub" onclick="subFunction()">-</button>
+            <button type="button" id="btnDiv" onclick="divFunction()">/</button>
+            <button type="button" id="btnMul" onclick="mulFunction()">*</button>
+            <button type="button" id="btnEqual" onclick="submitFunction()">=</button>
+            <p id="test"></p>
         </main>
         <footer>
             <br>
@@ -69,7 +74,7 @@
                         src="https://jigsaw.w3.org/css-validator/images/vcss"
                         alt="Valid CSS!" />
                 </a>
-                <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fnparkes%2Fitis3135%2Fcontract.html">
+                <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fnparkes%2Fitis3135%2Findex.html">
                     <img style="border:0;width:88px;height:31px"
                         src="images/button_validation_html5.png"
                         alt="Valid HTML!" />
