@@ -1,8 +1,7 @@
-var numArray = ["0", "0"];
+var numArray = ["", ""];
 var first = true;
 var whichNum = 0;
 var operator = "none";
-var test = ("hi" == "hi");
 
 function button0(){
     insertNumber("0");
@@ -36,10 +35,13 @@ function button9(){
 }
 
 function insertNumber(number){
+    document.getElementById("btnClear").innerHTML = "CE";
+    /*
     if(first){
         numArray[whichNum] = "";
         first = !first
     }
+    */
     numArray[whichNum] += number;
     document.getElementById("test").innerHTML = numArray[whichNum];
 }
@@ -53,24 +55,44 @@ function plusFunction(){
 function subFunction(){
     twoNumber(whichNum);
     operator = "subtraction";
+    first = !first;
     whichNum = 1;
 }
 function divFunction(){
     twoNumber(whichNum);
     operator = "division";
+    first = !first;
     whichNum = 1;
 }
 function mulFunction(){
     twoNumber(whichNum);
     operator = "multiply";
+    first = !first;
     whichNum = 1;
 }
 function submitFunction(){
     twoNumber(whichNum);
-    numArray[0] = 0;
 }
 function dotFunction(){
     insertNumber(".");
+}
+function clearFunction(){
+    if(numArray[whichNum] == "0"){
+        numArray = ["", ""];
+        whichNum = 0;
+        document.getElementById("test").innerHTML = numArray[0];
+    }
+    else{
+        console.log("in");
+        numArray[whichNum] = "0";
+        document.getElementById("btnClear").innerHTML = "AC";
+        document.getElementById("test").innerHTML = numArray[whichNum];
+    }
+}
+function negativeFunction(){
+    answer = -1 * parseFloat(numArray[whichNum]);
+    numArray[whichNum] = answer.toString();
+    document.getElementById("test").innerHTML = numArray[whichNum];
 }
 
 function twoNumber(pos){
@@ -85,16 +107,16 @@ function findAnswer(op){
         answer = parseFloat(numArray[0]) + parseFloat(numArray[1]);
     }
     else if(op == "subtract"){
-        numArray[0] = numArray[0] - numArray[1];
+        answer = parseFloat(numArray[0]) - parseFloat(numArray[1]);
     }
     else if(op == "division"){
-        numArray[0] = numArray[0] / numArray[1];
+        answer = parseFloat(numArray[0]) / parseFloat(numArray[1]);
     }
     else if(op == "multiply"){
-        numArray[0] = numArray[0] * numArray[1];
+        answer = parseFloat(numArray[0]) * parseFloat(numArray[1]);
     }
     numArray[0] = answer.toString();
-    numArray[1] = 0;
+    numArray[1] = "0";
     whichNum = 0;
     document.getElementById("test").innerHTML = numArray[0];
 }

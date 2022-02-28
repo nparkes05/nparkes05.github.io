@@ -5,6 +5,30 @@
         <script src="scripts/calculator_try.js"></script>
         <link rel="stylesheet" href="styles/default.css">
         <title>Noah Parkes | ITIS3135 | Nickel Parrot| Calculator</title>
+        <style>
+            .calculator{
+                margin-left: 30%;
+                margin-right: 35%;
+                padding: 1% 5% 1% 5%;
+                background-color: #FFFDB8;
+            }
+            .calcbutton
+            {
+                background-color: #1C1CBA;
+                border: none;
+                color: white;
+                margin-top: 5px;
+                padding: 12px 25px 12px 25px;
+            }
+            div p{
+                background-color: #1C1CBA;
+                margin: 5px 75px 5px 0px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 5px;
+                color: white;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -32,22 +56,32 @@
     
         <main>
             <h2>Home Page</h2>
-            <button type="button" id="btn0" onclick="button0()">0</button>
-            <button type="button" id="btn1" onclick="button1()">1</button>
-            <button type="button" id="btn2" onclick="button2()">2</button>
-            <button type="button" id="btn3" onclick="button3()">3</button>
-            <button type="button" id="btn4" onclick="button4()">4</button>
-            <button type="button" id="btn5" onclick="button5()">5</button>
-            <button type="button" id="btn6" onclick="button6()">6</button>
-            <button type="button" id="btn7" onclick="button7()">7</button>
-            <button type="button" id="btn8" onclick="button8()">8</button>
-            <button type="button" id="btn9" onclick="button9()">9</button>
-            <button type="button" id="btnPlus" onclick="plusFunction()">+</button>
-            <button type="button" id="btnSub" onclick="subFunction()">-</button>
-            <button type="button" id="btnDiv" onclick="divFunction()">/</button>
-            <button type="button" id="btnMul" onclick="mulFunction()">*</button>
-            <button type="button" id="btnEqual" onclick="submitFunction()">=</button>
-            <p id="test"></p>
+            <div class="calculator">
+                <p id="test">0</p>
+
+                <button type="button" id="btnDiv" onclick="divFunction()" class="calcbutton">/</button>
+                <button type="button" id="btnClear" onclick="clearFunction()" class="calcbutton">AC</button><br>
+
+                <button type="button" id="btn7" onclick="button7()" class="calcbutton">7</button>
+                <button type="button" id="btn8" onclick="button8()" class="calcbutton">8</button>
+                <button type="button" id="btn9" onclick="button9()" class="calcbutton">9</button>
+                <button type="button" id="btnMul" onclick="mulFunction()" class="calcbutton">*</button><br>
+
+                <button type="button" id="btn4" onclick="button4()" class="calcbutton">4</button>
+                <button type="button" id="btn5" onclick="button5()" class="calcbutton">5</button>
+                <button type="button" id="btn6" onclick="button6()" class="calcbutton">6</button>
+                <button type="button" id="btnSub" onclick="subFunction()" class="calcbutton">-</button><br>
+                
+                <button type="button" id="btn1" onclick="button1()"class="calcbutton">1</button>
+                <button type="button" id="btn2" onclick="button2()" class="calcbutton">2</button>
+                <button type="button" id="btn3" onclick="button3()" class="calcbutton">3</button>
+                <button type="button" id="btnPlus" onclick="plusFunction()" class="calcbutton">+</button><br>
+                
+                <button type="button" id="btnNegative" onclick="negativeFunction()" class="calcbutton">+/-</button>
+                <button type="button" id="btn0" onclick="button0()" class="calcbutton">0</button>
+                <button type="button" id="dotbtn" onclick="dotFunction()" class="calcbutton">.</button>
+                <button type="button" id="btnEqual" onclick="submitFunction()" class="calcbutton">=</button>
+            </div>
         </main>
         <footer>
             <br>
