@@ -3,6 +3,7 @@ var person = [], salary = [];
 function addSalary(){
     var personInput = document.getElementById("personText").value;
     var salaryInput = document.getElementById("salaryText").value;
+    salaryInput = parseFloat(salaryInput);
     person.push(personInput);
     salary.push(salaryInput);
 }
