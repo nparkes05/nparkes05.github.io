@@ -8,10 +8,9 @@ $(document).ready(function(){
         "images/youngRiley.jpeg"
     ]
     let count = 0;
-    var image = new Image();
-    image.src = jpegImage[count];
+    document.getElementById("imageSlide").src = jpegImage[count];
     $("img").click(function(evt) {
         count++;
-        image.src = jpegImage[count];
+        document.getElementById("imageSlide")= jpegImage[count];
     })
 })
