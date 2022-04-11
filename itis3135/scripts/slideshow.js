@@ -11,6 +11,9 @@ $(document).ready(function(){
     document.getElementById("imageSlide").src = jpegImage[count];
     $("img").click(function(evt) {
         count++;
-        document.getElementById("imageSlide")= jpegImage[count];
+        if(count == jpegImage.length){
+            count = 0;
+        }
+        document.getElementById("imageSlide").src = jpegImage[count];
     })
 })
