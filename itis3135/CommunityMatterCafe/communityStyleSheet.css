@@ -1,0 +1,31 @@
+@font-face {
+    font-family: headingFont;
+    src: url(headingFont.woff2);
+}
+@font-face {
+    font-family: bodyFont;
+    src: url(bodyFont.woff2);
+}
+body 
+{
+    background-color: #DEBD00;
+}
+.content
+{
+    background-color: #F2F2F2;
+    margin: 1% 10% 0 10%;
+    padding: 0 10% 0 10%;
+    border-style: solid;
+}
+h2
+{
+    font-family: headingFont;
+}
+h1
+{
+    font-family: headingFont;
+}
+p
+{
+    font-family: bodyFont;
+}

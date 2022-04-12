@@ -17,6 +17,8 @@ function polygonFunction(){
 
 //gets user input and returns a string of the shape
 function numberSides(userInput){
+    if(userInput < 0)
+        userInput = userInput * -1;
     if(userInput == 3) //if it has three sides
         return "Triangle";
     else if(userInput == 4) //if it has four sides
@@ -26,7 +28,13 @@ function numberSides(userInput){
     else if(userInput == 6) //if it has six sides
         return "Hexagon";
     else if(userInput == 7) //if it has seven sides
-        return "Heptagon"
+        return "Heptagon";
+    else if(userInput == 8)
+        return "Octagon";
+    else if(userInput == 9)
+        return "Enneagon";
+    else if(userInput == 10)
+        return "Decagon";
 
     return "Something went wrong"
 }
