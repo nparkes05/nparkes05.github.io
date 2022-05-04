@@ -4,7 +4,9 @@ window.onload = function(){
 
 function polygonFunction(){
     //Gets user input
-    var userInput = prompt("Please enter a number between 3 and 7");
+    var userInput = prompt("Please enter a number between 3 and 10");
+    if (userInput < 0)
+        userInput = -1 * userInput;
     //calls validation to validate number of sides
     var valid = validation(userInput);
     if(valid){ //if valid shape
@@ -42,7 +44,7 @@ function numberSides(userInput){
 //validates to make sure a proper number was entered
 function validation(userInput){
      //if userinput is greater than or equal to 3 and less than or equal to 7
-    if((userInput >= 3) && (userInput <= 7))
+    if((userInput >= 3) && (userInput <= 10))
         return true;
     else
         return false;

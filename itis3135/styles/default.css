@@ -75,3 +75,25 @@ header
 	color: white;
 	padding: 12px 25px 12px 25px;
 }
+.calculator{
+    margin-left: 30%;
+    margin-right: 35%;
+    padding: 1% 5% 1% 5%;
+    background-color: #FFFDB8;
+}
+.calcbutton
+{
+    background-color: #1C1CBA;
+    border: none;
+    color: white;
+    margin-top: 5px;
+    padding: 12px 25px 12px 25px;
+}
+div p{
+    background-color: #1C1CBA;
+    margin: 5px 75px 5px 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    color: white;
+}
