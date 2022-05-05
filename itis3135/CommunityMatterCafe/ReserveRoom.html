@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./communityStyleSheet.css">
+        <link rel="stylesheet" type="text/css" href="chosen/chosen.css">
+        <link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+
+        <script src="../scripts/jquery-3.6.0.js"></script>
+        <script src="chosen/chosen.jquery.js"></script>
+        <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+        <script src="script/cafeScript.js"></script>
+
+        <title>Donation Page</title>
+    </head>
+    <body>
+        <header>
+            <h1>Community Matter's Cafe</h1>
+            <nav>
+                <a href="./index.html">Home</a>
+                |
+                <a href="./aboutPage.html">About</a>
+                |
+                <a href="./ReserveRoom.html">Donate</a>
+                |
+                <a href="./drinkMenu.html">Drink Menu</a>
+                |
+                <a href="./foodMenu.html">Food Menu</a>
+            </nav>
+            
+        </header>
+        <main>
+            <div class="content">
+                <h2>Private Dining Space</h2>
+                <p>
+                    Community Matters Cafe has a private dining space for reservation. The private dining is a $200 flat fee. Any inqueries
+                    about the space contact: 
+                </p>
+                Pick a date:
+                <input type="text" id="datepicker"/> <br>
+                Pick a food option:
+                <select class="foodOption">
+                    <option value="Breakfast Menu">Breakfast Menu</option>
+                    <option value="Lunch Menu">Lunch Menu</option>
+                    <option value="Pastry Menu">Pastry Menu</option>
+                    <option value="No Food">No Food</option>
+                </select><br>
+                Enter email:
+                <input type="text" id="email"><br>
+                Enter phone number:
+                <input type="text" id="phoneNum"><br>
+                Enter First and Last name:
+                <input type="text" id="name"> <br> 
+                <button type="button" id="submit">Submit</button>
+            </div>
+        </main>
+        <footer>
+            <br>
+            Designed by <a href="ParkesDevelopment.co/">Parkes Development co.</a>
+        </footer>
+    </body>
+</html>
